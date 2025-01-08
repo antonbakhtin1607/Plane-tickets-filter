@@ -1,0 +1,102 @@
+[
+  {
+    "price": 13400,
+    "carrier": "SU",
+    "segments": [
+      {
+        "origin": "SVO",
+        "destination": "JFK",
+        "date": "14:00-02:00",
+        "stops": ["HEL", "AMS"],
+        "duration": "12h 0m"
+      },
+      {
+        "origin": "JFK",
+        "destination": "SVO",
+        "date": "18:00-05:30",
+        "stops": ["AMS"],
+        "duration": "11h 30m"
+      }
+    ]
+  },
+  {
+    "price": 8700,
+    "carrier": "AF",
+    "segments": [
+      {
+        "origin": "CDG",
+        "destination": "DXB",
+        "date": "06:30-14:10",
+        "stops": ["IST"],
+        "duration": "7h 40m"
+      },
+      {
+        "origin": "DXB",
+        "destination": "CDG",
+        "date": "22:45-06:15",
+        "stops": [],
+        "duration": "7h 30m"
+      }
+    ]
+  },
+  {
+    "price": 15200,
+    "carrier": "LH",
+    "segments": [
+      {
+        "origin": "FRA",
+        "destination": "LAX",
+        "date": "09:00-21:00",
+        "stops": ["ORD"],
+        "duration": "13h 0m"
+      },
+      {
+        "origin": "LAX",
+        "destination": "FRA",
+        "date": "16:00-05:00",
+        "stops": ["ORD", "MUC"],
+        "duration": "14h 0m"
+      }
+    ]
+  },
+  {
+    "price": 6500,
+    "carrier": "BA",
+    "segments": [
+      {
+        "origin": "LHR",
+        "destination": "MAD",
+        "date": "07:15-09:35",
+        "stops": [],
+        "duration": "2h 20m"
+      },
+      {
+        "origin": "MAD",
+        "destination": "LHR",
+        "date": "12:30-15:30",
+        "stops": ["BCN"],
+        "duration": "3h 0m"
+      }
+    ]
+  },
+  {
+    "price": 9800,
+    "carrier": "EK",
+    "segments": [
+      {
+        "origin": "DXB",
+        "destination": "SYD",
+        "date": "21:00-12:00",
+        "stops": ["SIN"],
+        "duration": "15h 0m"
+      },
+      {
+        "origin": "SYD",
+        "destination": "DXB",
+        "date": "23:30-14:00",
+        "stops": [],
+        "duration": "14h 30m"
+      }
+    ]
+  }
+]
