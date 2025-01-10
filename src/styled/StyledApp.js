@@ -15,6 +15,7 @@ export const StyledLogoBox = styled(Box)`
 `;
 
 export const StyledGridContainer = styled(Grid2)`
+  flex-wrap: nowrap;
   container;
   spacing: 2;
   justify-content: center;
@@ -22,6 +23,7 @@ export const StyledGridContainer = styled(Grid2)`
 `;
 
 export const StyledGridItem = styled(Grid2)`
+  max-width: 580px;
   padding: 16px;
   border-radius: 8px;
   background-color: ${(props) => props.backgroundColor || 'transparent'};
