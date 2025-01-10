@@ -1,8 +1,11 @@
-import PropTypes from "prop-types";
-import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
-import CheckBoxOutlineBlankOutlinedIcon from "@mui/icons-material/CheckBoxOutlineBlankOutlined";
-import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
-import { styledTheme } from "../../theme";
+import { Checkbox, FormControlLabel, FormGroup } from '@mui/material';
+import CheckBoxOutlineBlankOutlinedIcon from '@mui/icons-material/CheckBoxOutlineBlankOutlined';
+import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
+import PropTypes from 'prop-types';
+
+import { StyledFormControlLabel } from '../styled/StyledCheckBox'; 
+
+import { styledTheme } from '../theme';
 
 const CustomCheckbox = ({ checked, label }) => {
   return (
@@ -14,7 +17,7 @@ const CustomCheckbox = ({ checked, label }) => {
           checkedIcon={<CheckBoxOutlinedIcon />}
           sx={{
             color: styledTheme.colors.blue,
-            "&.Mui-checked": {
+            '&.Mui-checked': {
               color: styledTheme.colors.blue,
             },
           }}
@@ -33,16 +36,9 @@ CustomCheckbox.propTypes = {
 const CheckBox = () => {
   return (
     <>
-      <div
-        style={{
-          textAlign: "center",
-          textTransform: "uppercase",
-          color: styledTheme.font.primaryGrey,
-          fontWeight: "500",
-        }}
-      >
+      <StyledFormControlLabel>
         Кількість пересадок
-      </div>
+      </StyledFormControlLabel>
       <FormGroup>
         <CustomCheckbox checked={true} label="Все" />
         <CustomCheckbox checked={false} label="Без пересадок" />
