@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   /* CSS Reset */
@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   /* Global Styles */
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: ${(props) => props.theme.colors.background || "#FFFFFF"};
+    background-color: ${(props) => props.theme.colors.background || '#FFFFFF'};
     color: ${(props) => props.colors};
     max-width: 1280px;
     width: 100%;
