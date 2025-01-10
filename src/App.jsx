@@ -1,60 +1,29 @@
-import { ThemeProvider } from "@mui/material/styles";
-import { ThemeProvider as StyledThemeProvider } from "styled-components";
-import GlobalStyle from "./GlobalStyle";
-import { Box,  Grid2 } from "@mui/material";
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import { ThemeProvider } from '@mui/material/styles';
 
-import WebsiteLogo from "./assets/WebsiteLogo.png";
-import CheckBox from "./components/CheckBox/CheckBox";
-import TicketList from "./components/TicketList/TicketList";
-import { muiTheme, styledTheme } from "./theme"; 
+import { StyledAppContainer, StyledLogoBox, StyledGridContainer, StyledGridItem } from './styled/StyledApp';
+import { CheckBox, TicketList } from './components';
+
+import GlobalStyle from './GlobalStyle';
+import { muiTheme, styledTheme } from './theme';
+import WebsiteLogo from './assets/WebsiteLogo.png';
 
 const App = () => {
   return (
     <ThemeProvider theme={muiTheme}>
       <StyledThemeProvider theme={styledTheme}>
         <GlobalStyle colors={styledTheme.font.primaryGrey} />
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-            height: "100vh",
-          }}
-        >
-          <Box
-            component="img"
-            src={WebsiteLogo}
-            alt="Logo"
-            sx={{
-              height: "80px",
-              marginBottom: 3,
-              marginTop: 3,
-            }}
-          />
-          <Grid2 container spacing={2} justifyContent="center" alignItems="baseline">
-            <Grid2
-              xs={4}
-              
-              sx={{
-                backgroundColor: styledTheme.colors.white,
-                padding: "16px",
-                borderRadius: "8px",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-              }}
-            >
+        <StyledAppContainer>
+          <StyledLogoBox component="img" src={WebsiteLogo} alt="Logo" />
+          <StyledGridContainer container spacing={2} justifyContent="center" alignItems="baseline">
+            <StyledGridItem xs={4} backgroundColor={styledTheme.colors.white}>
               <CheckBox />
-            </Grid2>
-            <Grid2
-              xs={8}
-              sx={{
-                padding: "16px",
-                borderRadius: "8px",
-              }}
-            >
+            </StyledGridItem>
+            <StyledGridItem xs={8}>
               <TicketList />
-            </Grid2>
-          </Grid2>
-        </div>
+            </StyledGridItem>
+          </StyledGridContainer>
+        </StyledAppContainer>
       </StyledThemeProvider>
     </ThemeProvider>
   );
