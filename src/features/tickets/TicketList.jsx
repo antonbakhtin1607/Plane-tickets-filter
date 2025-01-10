@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Typography } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
+import { Button, Typography } from '@mui/material';
+
 import {
   StyledButtonGroup,
   TicketBox,
@@ -8,9 +9,10 @@ import {
   LogoBox,
   SegmentBox,
 } from '../../styled/StyledTicketList';
+
+import { fetchTicketsRequest } from './ticketsSlice';
 import { styledTheme } from '../../theme';
 import AirCompanyLogo from './assets/AirCompanyLogo.png';
-import { fetchTicketsRequest } from './ticketsSlice';
 
 const TicketList = () => {
   const dispatch = useDispatch();
