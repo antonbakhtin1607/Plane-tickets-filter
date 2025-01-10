@@ -1,20 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Typography } from '@mui/material';
-
+import { useSelector, useDispatch } from 'react-redux';
 import {
   StyledButtonGroup,
   TicketBox,
   PriceBox,
   LogoBox,
   SegmentBox,
-} from '../styled/StyledTicketList';
-
-import AirCompanyLogo from '../assets/AirCompanyLogo.png';
-import testRequest from '../test-request.json';
-import { styledTheme } from '../theme';
+} from '../../styled/StyledTicketList';
+import { styledTheme } from '../../theme';
+import AirCompanyLogo from './assets/AirCompanyLogo.png';
+import { fetchTicketsRequest } from './ticketsSlice';
 
 const TicketList = () => {
+  const dispatch = useDispatch();
   const [activeButton, setActiveButton] = useState(0);
+
+  const { data, loading, error } = useSelector((state) => state.tickets);
+
+  useEffect(() => {
+    dispatch(fetchTicketsRequest());
+  }, [dispatch]);
+
+  if (loading) return <Typography>Loading tickets...</Typography>;
+  if (error) return <Typography>Error loading tickets: {error}</Typography>;
 
   return (
     <>
@@ -33,9 +42,6 @@ const TicketList = () => {
                 : styledTheme.colors.white,
             fontWeight: 'bold',
             padding: '16px 50px',
-            '&.MuiButtonGroup-firstButton': {
-              border: 'none',
-            },
           }}
         >
           Самий дешевий
@@ -61,7 +67,7 @@ const TicketList = () => {
         </Button>
       </StyledButtonGroup>
 
-      {testRequest.map((ticket, index) => (
+      {data.map((ticket, index) => (
         <TicketBox key={index}>
           <PriceBox>{ticket.price} ₴</PriceBox>
 
@@ -102,7 +108,7 @@ const TicketList = () => {
                   <>
                     {segment.stops.length === 1
                       ? '1 ПЕРЕСАДКА:'
-                      : '2 ПЕРЕСАДКИ:'}
+                      : `${segment.stops.length} ПЕРЕСАДКИ:`}
                     <Typography
                       variant="body1"
                       sx={{

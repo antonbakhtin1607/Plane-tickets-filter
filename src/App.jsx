@@ -7,7 +7,8 @@ import {
   StyledGridContainer,
   StyledGridItem,
 } from './styled/StyledApp';
-import { CheckBox, TicketList } from './components';
+import { CheckBox } from './components';
+import TicketList from './features/tickets/TicketList';
 
 import GlobalStyle from './GlobalStyle';
 import { muiTheme, styledTheme } from './theme';
