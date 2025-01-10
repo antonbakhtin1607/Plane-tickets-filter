@@ -12,7 +12,7 @@ export const TicketBox = styled(Box)`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   grid-template-columns: repeat(3, 1fr);
   gap: 10px 26px;
-  grid-template-areas: "price . logo" "destination duration stops";
+  grid-template-areas: 'price . logo' 'destination duration stops';
 `;
 
 export const PriceBox = styled(Box)`

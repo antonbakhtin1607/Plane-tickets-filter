@@ -3,7 +3,7 @@ import CheckBoxOutlineBlankOutlinedIcon from '@mui/icons-material/CheckBoxOutlin
 import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
 import PropTypes from 'prop-types';
 
-import { StyledFormControlLabel } from '../styled/StyledCheckBox'; 
+import { StyledFormControlLabel } from '../styled/StyledCheckBox';
 
 import { styledTheme } from '../theme';
 
@@ -36,9 +36,7 @@ CustomCheckbox.propTypes = {
 const CheckBox = () => {
   return (
     <>
-      <StyledFormControlLabel>
-        Кількість пересадок
-      </StyledFormControlLabel>
+      <StyledFormControlLabel>Кількість пересадок</StyledFormControlLabel>
       <FormGroup>
         <CustomCheckbox checked={true} label="Все" />
         <CustomCheckbox checked={false} label="Без пересадок" />

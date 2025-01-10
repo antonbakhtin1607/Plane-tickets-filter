@@ -1,7 +1,12 @@
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { ThemeProvider } from '@mui/material/styles';
 
-import { StyledAppContainer, StyledLogoBox, StyledGridContainer, StyledGridItem } from './styled/StyledApp';
+import {
+  StyledAppContainer,
+  StyledLogoBox,
+  StyledGridContainer,
+  StyledGridItem,
+} from './styled/StyledApp';
 import { CheckBox, TicketList } from './components';
 
 import GlobalStyle from './GlobalStyle';
@@ -15,7 +20,12 @@ const App = () => {
         <GlobalStyle colors={styledTheme.font.primaryGrey} />
         <StyledAppContainer>
           <StyledLogoBox component="img" src={WebsiteLogo} alt="Logo" />
-          <StyledGridContainer container spacing={2} justifyContent="center" alignItems="baseline">
+          <StyledGridContainer
+            container
+            spacing={2}
+            justifyContent="center"
+            alignItems="baseline"
+          >
             <StyledGridItem xs={4} backgroundColor={styledTheme.colors.white}>
               <CheckBox />
             </StyledGridItem>
