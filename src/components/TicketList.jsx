@@ -8,11 +8,11 @@ import {
   PriceBox,
   LogoBox,
   SegmentBox,
-} from '../../styled/StyledTicketList';
+} from '../styled/StyledTicketList';
 
-import { fetchTicketsRequest } from './ticketsSlice';
-import { styledTheme } from '../../theme';
-import AirCompanyLogo from './assets/AirCompanyLogo.png';
+import { fetchTicketsRequest } from '../redux/tickets/ticketsSlice';
+import { styledTheme } from '../theme';
+import AirCompanyLogo from '../assets/AirCompanyLogo.png';
 
 const TicketList = () => {
   const dispatch = useDispatch();
@@ -74,11 +74,7 @@ const TicketList = () => {
           <PriceBox>{ticket.price} ₴</PriceBox>
 
           <LogoBox>
-            <img
-              src={AirCompanyLogo}
-              alt="Air Company Logo"
-              style={{ height: '40px' }}
-            />
+            <img src={AirCompanyLogo} alt="Air Company Logo" />
           </LogoBox>
 
           {ticket.segments.map((segment, segmentIndex) => (
