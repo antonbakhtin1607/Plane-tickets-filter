@@ -10,14 +10,13 @@ export const StyledAppContainer = styled.div`
 
 export const StyledLogoBox = styled(Box)`
   height: 80px;
-  margin-bottom: 3;
-  margin-top: 3;
+  margin-bottom: 24px;
+  margin-top: 24px;
 `;
 
 export const StyledGridContainer = styled(Grid2)`
   flex-wrap: nowrap;
   container;
-  spacing: 2;
   justify-content: center;
   align-items: baseline;
 `;
