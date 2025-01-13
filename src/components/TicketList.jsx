@@ -10,7 +10,7 @@ import {
   SegmentBox,
 } from '../styled/StyledTicketList';
 
-import { fetchTicketsRequest } from '../redux/tickets/ticketsSlice';
+import { fetchTicketsRequest } from '../redux/ducks/tickets';
 import { styledTheme } from '../theme';
 import AirCompanyLogo from '../assets/AirCompanyLogo.png';
 

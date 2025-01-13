@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
 
-import ticketsReducer from './tickets/ticketsSlice';
-import ticketsSaga from './tickets/ticketsSaga';
+import ticketsReducer from './ducks/tickets';
+import { rootSaga } from './ducks';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -11,9 +11,9 @@ const store = configureStore({
     tickets: ticketsReducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(sagaMiddleware),
+    getDefaultMiddleware({ thunk: false }).concat(sagaMiddleware),
 });
 
-sagaMiddleware.run(ticketsSaga);
+sagaMiddleware.run(rootSaga);
 
 export default store;
