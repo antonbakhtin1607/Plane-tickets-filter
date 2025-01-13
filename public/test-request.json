@@ -1,0 +1,1002 @@
+[
+  {
+    "price": 18889,
+    "carrier": "YN",
+    "segments": [
+      {
+        "origin": "Devonville",
+        "destination": "East Monicashire",
+        "date": "14:54-20:54",
+        "stops": [],
+        "duration": "5h 59m"
+      },
+      {
+        "origin": "Shannonview",
+        "destination": "Lake Jennifer",
+        "date": "21:40-02:40",
+        "stops": ["Johnsonport", "Port Albert", "North Jacksonstad"],
+        "duration": "12h 2m"
+      }
+    ]
+  },
+  {
+    "price": 6633,
+    "carrier": "RZ",
+    "segments": [
+      {
+        "origin": "North George",
+        "destination": "Juliahaven",
+        "date": "17:46-04:46",
+        "stops": ["Lisafort"],
+        "duration": "8h 22m"
+      },
+      {
+        "origin": "Lake William",
+        "destination": "Daltonport",
+        "date": "20:25-01:25",
+        "stops": ["Harringtonbury", "Nguyenfort"],
+        "duration": "8h 5m"
+      }
+    ]
+  },
+  {
+    "price": 8261,
+    "carrier": "QI",
+    "segments": [
+      {
+        "origin": "Careymouth",
+        "destination": "North Geraldport",
+        "date": "07:45-19:45",
+        "stops": [],
+        "duration": "10h 54m"
+      },
+      {
+        "origin": "Salazarborough",
+        "destination": "North Carrie",
+        "date": "06:10-11:10",
+        "stops": ["Baldwinmouth", "Wardland"],
+        "duration": "11h 16m"
+      }
+    ]
+  },
+  {
+    "price": 18295,
+    "carrier": "GV",
+    "segments": [
+      {
+        "origin": "Lake Jacqueline",
+        "destination": "New Charles",
+        "date": "01:04-13:04",
+        "stops": ["Pattersonfurt", "Jillianburgh", "Lake Courtneymouth"],
+        "duration": "9h 54m"
+      },
+      {
+        "origin": "Port Joshuaburgh",
+        "destination": "North Lisaburgh",
+        "date": "16:04-22:04",
+        "stops": [],
+        "duration": "8h 53m"
+      }
+    ]
+  },
+  {
+    "price": 18793,
+    "carrier": "SQ",
+    "segments": [
+      {
+        "origin": "Huffmanfort",
+        "destination": "Kingshire",
+        "date": "09:58-14:58",
+        "stops": ["East Steven"],
+        "duration": "1h 37m"
+      },
+      {
+        "origin": "North Steve",
+        "destination": "Port Jamie",
+        "date": "10:42-20:42",
+        "stops": ["Pamelatown", "Parkerport", "East Regina"],
+        "duration": "10h 2m"
+      }
+    ]
+  },
+  {
+    "price": 15654,
+    "carrier": "AE",
+    "segments": [
+      {
+        "origin": "Wellsport",
+        "destination": "West Cherylborough",
+        "date": "05:23-11:23",
+        "stops": [],
+        "duration": "3h 44m"
+      },
+      {
+        "origin": "Samanthatown",
+        "destination": "Coreymouth",
+        "date": "13:30-21:30",
+        "stops": ["North Jenna", "Williamsstad", "West Andrea"],
+        "duration": "5h 55m"
+      }
+    ]
+  },
+  {
+    "price": 17361,
+    "carrier": "JG",
+    "segments": [
+      {
+        "origin": "Lake Robert",
+        "destination": "Brianberg",
+        "date": "18:47-06:47",
+        "stops": ["Jonesland"],
+        "duration": "3h 56m"
+      },
+      {
+        "origin": "New Cody",
+        "destination": "New Brent",
+        "date": "22:05-09:05",
+        "stops": ["Brookshaven", "North Julieton"],
+        "duration": "5h 57m"
+      }
+    ]
+  },
+  {
+    "price": 9601,
+    "carrier": "HM",
+    "segments": [
+      {
+        "origin": "Tiffanyside",
+        "destination": "Katherinefort",
+        "date": "08:24-16:24",
+        "stops": ["Elizabethville", "Joannaburgh", "Brettside"],
+        "duration": "9h 30m"
+      },
+      {
+        "origin": "South Hannah",
+        "destination": "Kennedyport",
+        "date": "12:57-19:57",
+        "stops": ["Hughesburgh", "North Joseph", "Lisaview"],
+        "duration": "10h 43m"
+      }
+    ]
+  },
+  {
+    "price": 10640,
+    "carrier": "XZ",
+    "segments": [
+      {
+        "origin": "Lukebury",
+        "destination": "Port Jordan",
+        "date": "01:28-11:28",
+        "stops": [],
+        "duration": "7h 34m"
+      },
+      {
+        "origin": "Gutierrezbury",
+        "destination": "East Ryan",
+        "date": "08:42-16:42",
+        "stops": [],
+        "duration": "5h 11m"
+      }
+    ]
+  },
+  {
+    "price": 13621,
+    "carrier": "VM",
+    "segments": [
+      {
+        "origin": "Howardbury",
+        "destination": "Debrafort",
+        "date": "15:46-02:46",
+        "stops": [],
+        "duration": "5h 7m"
+      },
+      {
+        "origin": "East Markborough",
+        "destination": "Scottfurt",
+        "date": "10:31-21:31",
+        "stops": ["New Davidville", "Lake Scott"],
+        "duration": "1h 45m"
+      }
+    ]
+  },
+  {
+    "price": 13934,
+    "carrier": "HK",
+    "segments": [
+      {
+        "origin": "North Joshuaport",
+        "destination": "New Amanda",
+        "date": "10:13-16:13",
+        "stops": ["Cassandrafort", "East Deborah", "New Rachelchester"],
+        "duration": "1h 54m"
+      },
+      {
+        "origin": "West Anthony",
+        "destination": "New Christopher",
+        "date": "07:44-12:44",
+        "stops": [],
+        "duration": "1h 33m"
+      }
+    ]
+  },
+  {
+    "price": 10050,
+    "carrier": "PW",
+    "segments": [
+      {
+        "origin": "Morgantown",
+        "destination": "New Amy",
+        "date": "17:24-03:24",
+        "stops": [],
+        "duration": "8h 12m"
+      },
+      {
+        "origin": "South Taraport",
+        "destination": "Faithberg",
+        "date": "14:59-20:59",
+        "stops": ["West Nicholasborough", "Barnesside", "New James"],
+        "duration": "5h 41m"
+      }
+    ]
+  },
+  {
+    "price": 5999,
+    "carrier": "PQ",
+    "segments": [
+      {
+        "origin": "Davidhaven",
+        "destination": "Luisberg",
+        "date": "17:44-22:44",
+        "stops": ["Frenchberg", "Briantown", "New Jasonside"],
+        "duration": "10h 46m"
+      },
+      {
+        "origin": "Angelabury",
+        "destination": "West Joshua",
+        "date": "03:38-14:38",
+        "stops": [],
+        "duration": "11h 6m"
+      }
+    ]
+  },
+  {
+    "price": 19098,
+    "carrier": "NG",
+    "segments": [
+      {
+        "origin": "Nicholasview",
+        "destination": "Kennethchester",
+        "date": "21:53-03:53",
+        "stops": ["Danielborough"],
+        "duration": "11h 29m"
+      },
+      {
+        "origin": "South Molly",
+        "destination": "Melindashire",
+        "date": "06:58-11:58",
+        "stops": [],
+        "duration": "1h 10m"
+      }
+    ]
+  },
+  {
+    "price": 9274,
+    "carrier": "FD",
+    "segments": [
+      {
+        "origin": "New Christopher",
+        "destination": "Port Joanborough",
+        "date": "07:56-12:56",
+        "stops": ["Port Joann"],
+        "duration": "2h 45m"
+      },
+      {
+        "origin": "Nathanielville",
+        "destination": "West Sonya",
+        "date": "22:26-06:26",
+        "stops": ["East Robertstad"],
+        "duration": "3h 48m"
+      }
+    ]
+  },
+  {
+    "price": 9932,
+    "carrier": "KE",
+    "segments": [
+      {
+        "origin": "Thompsonmouth",
+        "destination": "South Juanton",
+        "date": "22:49-07:49",
+        "stops": [],
+        "duration": "1h 38m"
+      },
+      {
+        "origin": "Nathanielmouth",
+        "destination": "North Suzanne",
+        "date": "17:37-01:37",
+        "stops": ["Lake Cameron", "North Ronald", "North Austinmouth"],
+        "duration": "7h 39m"
+      }
+    ]
+  },
+  {
+    "price": 13609,
+    "carrier": "AK",
+    "segments": [
+      {
+        "origin": "Meaganstad",
+        "destination": "Lake Anna",
+        "date": "00:42-12:42",
+        "stops": ["South Hector", "Garciaton"],
+        "duration": "3h 51m"
+      },
+      {
+        "origin": "South Michelle",
+        "destination": "New Joseburgh",
+        "date": "01:01-10:01",
+        "stops": [],
+        "duration": "4h 51m"
+      }
+    ]
+  },
+  {
+    "price": 8866,
+    "carrier": "KB",
+    "segments": [
+      {
+        "origin": "North Stephenton",
+        "destination": "Andersonton",
+        "date": "08:13-20:13",
+        "stops": ["Wisemouth"],
+        "duration": "3h 32m"
+      },
+      {
+        "origin": "Lake Melanie",
+        "destination": "Samuelfurt",
+        "date": "00:18-12:18",
+        "stops": ["South William", "Garciamouth"],
+        "duration": "1h 0m"
+      }
+    ]
+  },
+  {
+    "price": 19501,
+    "carrier": "BP",
+    "segments": [
+      {
+        "origin": "Youngside",
+        "destination": "Port Warrentown",
+        "date": "13:45-20:45",
+        "stops": ["New Johntown", "Garciashire"],
+        "duration": "2h 48m"
+      },
+      {
+        "origin": "West Kevin",
+        "destination": "Saundersland",
+        "date": "22:34-03:34",
+        "stops": ["Josephville", "Lake Cheyenne"],
+        "duration": "12h 7m"
+      }
+    ]
+  },
+  {
+    "price": 17869,
+    "carrier": "AI",
+    "segments": [
+      {
+        "origin": "New Jonathan",
+        "destination": "Andrewhaven",
+        "date": "15:17-21:17",
+        "stops": ["Campbellstad", "Lake Bobbyberg"],
+        "duration": "3h 58m"
+      },
+      {
+        "origin": "Port Justinland",
+        "destination": "Jacobsonshire",
+        "date": "01:56-08:56",
+        "stops": ["Port Joshuaberg", "Garciamouth", "South Catherineport"],
+        "duration": "1h 39m"
+      }
+    ]
+  },
+  {
+    "price": 16989,
+    "carrier": "JY",
+    "segments": [
+      {
+        "origin": "Stephanieburgh",
+        "destination": "Eileenchester",
+        "date": "23:37-05:37",
+        "stops": [],
+        "duration": "11h 4m"
+      },
+      {
+        "origin": "Yangview",
+        "destination": "Breannaville",
+        "date": "03:08-12:08",
+        "stops": ["Port Kristopher"],
+        "duration": "12h 25m"
+      }
+    ]
+  },
+  {
+    "price": 7347,
+    "carrier": "CL",
+    "segments": [
+      {
+        "origin": "Robertview",
+        "destination": "East Seanbury",
+        "date": "13:46-01:46",
+        "stops": [],
+        "duration": "9h 22m"
+      },
+      {
+        "origin": "Port Rebecca",
+        "destination": "Williamburgh",
+        "date": "01:29-11:29",
+        "stops": ["Michaelside"],
+        "duration": "3h 59m"
+      }
+    ]
+  },
+  {
+    "price": 13491,
+    "carrier": "TL",
+    "segments": [
+      {
+        "origin": "Amandaborough",
+        "destination": "Greenburgh",
+        "date": "01:00-09:00",
+        "stops": ["North Jesse", "New Marcus", "Lake Mario"],
+        "duration": "2h 31m"
+      },
+      {
+        "origin": "East Lauramouth",
+        "destination": "Johnborough",
+        "date": "23:53-04:53",
+        "stops": ["West Phillipborough", "Lake Edward"],
+        "duration": "12h 22m"
+      }
+    ]
+  },
+  {
+    "price": 6150,
+    "carrier": "SZ",
+    "segments": [
+      {
+        "origin": "Hannahfort",
+        "destination": "North Ryanberg",
+        "date": "02:30-12:30",
+        "stops": ["Donaldmouth", "Delacruzburgh"],
+        "duration": "2h 20m"
+      },
+      {
+        "origin": "Townsendberg",
+        "destination": "Amyburgh",
+        "date": "14:56-01:56",
+        "stops": ["Hodgesview", "South Cindyland", "Davisberg"],
+        "duration": "7h 37m"
+      }
+    ]
+  },
+  {
+    "price": 9577,
+    "carrier": "TR",
+    "segments": [
+      {
+        "origin": "Serranoberg",
+        "destination": "Angelaside",
+        "date": "19:19-05:19",
+        "stops": ["New Johnmouth"],
+        "duration": "11h 37m"
+      },
+      {
+        "origin": "New Tracy",
+        "destination": "Carolinestad",
+        "date": "05:46-17:46",
+        "stops": ["Port Timothy", "Jeffreyton"],
+        "duration": "8h 54m"
+      }
+    ]
+  },
+  {
+    "price": 8724,
+    "carrier": "CX",
+    "segments": [
+      {
+        "origin": "West Stacie",
+        "destination": "Port Crystalton",
+        "date": "02:12-12:12",
+        "stops": ["North Lisafurt", "Charleston"],
+        "duration": "2h 30m"
+      },
+      {
+        "origin": "Teresaton",
+        "destination": "South Jacob",
+        "date": "15:57-01:57",
+        "stops": ["Keithfort", "New Christopher"],
+        "duration": "5h 5m"
+      }
+    ]
+  },
+  {
+    "price": 19120,
+    "carrier": "JG",
+    "segments": [
+      {
+        "origin": "North Stephanieshire",
+        "destination": "Wheelerberg",
+        "date": "02:00-11:00",
+        "stops": ["Christineton"],
+        "duration": "6h 48m"
+      },
+      {
+        "origin": "Lake Loriview",
+        "destination": "North Aprilport",
+        "date": "00:57-12:57",
+        "stops": ["Brooksstad", "Kellyville", "Kathleenside"],
+        "duration": "11h 43m"
+      }
+    ]
+  },
+  {
+    "price": 17903,
+    "carrier": "XG",
+    "segments": [
+      {
+        "origin": "West Kenneth",
+        "destination": "North Vanessaberg",
+        "date": "08:31-19:31",
+        "stops": [],
+        "duration": "11h 14m"
+      },
+      {
+        "origin": "Port Matthewbury",
+        "destination": "Sydneymouth",
+        "date": "07:33-19:33",
+        "stops": ["North Leah"],
+        "duration": "10h 39m"
+      }
+    ]
+  },
+  {
+    "price": 14145,
+    "carrier": "MB",
+    "segments": [
+      {
+        "origin": "Greentown",
+        "destination": "West Johnny",
+        "date": "09:59-18:59",
+        "stops": ["Rodriguezhaven"],
+        "duration": "4h 23m"
+      },
+      {
+        "origin": "Nancyside",
+        "destination": "Sherylview",
+        "date": "08:38-19:38",
+        "stops": [],
+        "duration": "8h 19m"
+      }
+    ]
+  },
+  {
+    "price": 14574,
+    "carrier": "BJ",
+    "segments": [
+      {
+        "origin": "Moorefort",
+        "destination": "Troyville",
+        "date": "10:42-21:42",
+        "stops": [],
+        "duration": "8h 27m"
+      },
+      {
+        "origin": "Lake Katieberg",
+        "destination": "East Douglas",
+        "date": "06:08-12:08",
+        "stops": [],
+        "duration": "4h 37m"
+      }
+    ]
+  },
+  {
+    "price": 11969,
+    "carrier": "WA",
+    "segments": [
+      {
+        "origin": "West David",
+        "destination": "Lake Amy",
+        "date": "00:57-11:57",
+        "stops": [],
+        "duration": "11h 53m"
+      },
+      {
+        "origin": "Theresachester",
+        "destination": "Cowanburgh",
+        "date": "05:00-17:00",
+        "stops": ["North Jacob"],
+        "duration": "5h 46m"
+      }
+    ]
+  },
+  {
+    "price": 5846,
+    "carrier": "TD",
+    "segments": [
+      {
+        "origin": "Mendozaland",
+        "destination": "Edwardmouth",
+        "date": "22:11-03:11",
+        "stops": ["North Jacobborough", "Flowerschester", "Geoffreyview"],
+        "duration": "12h 48m"
+      },
+      {
+        "origin": "Luceroport",
+        "destination": "South Christineshire",
+        "date": "21:41-03:41",
+        "stops": ["South Jaimeberg"],
+        "duration": "12h 11m"
+      }
+    ]
+  },
+  {
+    "price": 17501,
+    "carrier": "TD",
+    "segments": [
+      {
+        "origin": "Lake Brianna",
+        "destination": "Port Mariabury",
+        "date": "18:00-01:00",
+        "stops": [],
+        "duration": "10h 3m"
+      },
+      {
+        "origin": "Johnport",
+        "destination": "Harristown",
+        "date": "09:00-14:00",
+        "stops": [],
+        "duration": "3h 26m"
+      }
+    ]
+  },
+  {
+    "price": 5206,
+    "carrier": "SS",
+    "segments": [
+      {
+        "origin": "Natalietown",
+        "destination": "South Katherineville",
+        "date": "18:36-02:36",
+        "stops": [],
+        "duration": "10h 37m"
+      },
+      {
+        "origin": "Michaeltown",
+        "destination": "Linburgh",
+        "date": "05:30-14:30",
+        "stops": ["New Angelaton", "Rossland", "East Nicole"],
+        "duration": "8h 59m"
+      }
+    ]
+  },
+  {
+    "price": 17627,
+    "carrier": "AW",
+    "segments": [
+      {
+        "origin": "South Paulport",
+        "destination": "East Kenneth",
+        "date": "07:55-17:55",
+        "stops": ["East James"],
+        "duration": "8h 45m"
+      },
+      {
+        "origin": "East Michele",
+        "destination": "North Susan",
+        "date": "08:24-14:24",
+        "stops": [],
+        "duration": "4h 51m"
+      }
+    ]
+  },
+  {
+    "price": 19853,
+    "carrier": "YB",
+    "segments": [
+      {
+        "origin": "Reneeside",
+        "destination": "Lake Jacobview",
+        "date": "15:59-01:59",
+        "stops": ["South Geoffreyside", "Port Amber"],
+        "duration": "8h 47m"
+      },
+      {
+        "origin": "Johnsontown",
+        "destination": "Port Mary",
+        "date": "01:59-06:59",
+        "stops": ["Annefort", "Port Rebeccabury"],
+        "duration": "2h 12m"
+      }
+    ]
+  },
+  {
+    "price": 17083,
+    "carrier": "CZ",
+    "segments": [
+      {
+        "origin": "Colleenmouth",
+        "destination": "Steeleland",
+        "date": "04:39-10:39",
+        "stops": ["East Tracyfurt", "Christophermouth"],
+        "duration": "2h 38m"
+      },
+      {
+        "origin": "East Dwayne",
+        "destination": "Brownmouth",
+        "date": "06:39-12:39",
+        "stops": ["Debramouth", "South Kayla", "Gregorystad"],
+        "duration": "4h 17m"
+      }
+    ]
+  },
+  {
+    "price": 10459,
+    "carrier": "UI",
+    "segments": [
+      {
+        "origin": "Paulmouth",
+        "destination": "New Benjaminside",
+        "date": "16:55-00:55",
+        "stops": ["Ryanton", "South Maryland"],
+        "duration": "9h 24m"
+      },
+      {
+        "origin": "Rebeccaton",
+        "destination": "Douglasfurt",
+        "date": "04:43-14:43",
+        "stops": ["Carlsonport", "Craigmouth", "Gomezhaven"],
+        "duration": "11h 32m"
+      }
+    ]
+  },
+  {
+    "price": 17773,
+    "carrier": "PI",
+    "segments": [
+      {
+        "origin": "Andrewview",
+        "destination": "New Evelyn",
+        "date": "16:58-00:58",
+        "stops": ["West Ivanborough", "Riceside"],
+        "duration": "5h 13m"
+      },
+      {
+        "origin": "Nathanhaven",
+        "destination": "Keithberg",
+        "date": "09:35-20:35",
+        "stops": ["Kellybury", "Lake Paulton"],
+        "duration": "10h 41m"
+      }
+    ]
+  },
+  {
+    "price": 16016,
+    "carrier": "KW",
+    "segments": [
+      {
+        "origin": "New Johnville",
+        "destination": "East Kathryn",
+        "date": "15:25-03:25",
+        "stops": ["Smithport", "Noahburgh"],
+        "duration": "11h 19m"
+      },
+      {
+        "origin": "Torresfort",
+        "destination": "Ericbury",
+        "date": "12:50-20:50",
+        "stops": [],
+        "duration": "7h 2m"
+      }
+    ]
+  },
+  {
+    "price": 11961,
+    "carrier": "UM",
+    "segments": [
+      {
+        "origin": "Powellborough",
+        "destination": "Sherriberg",
+        "date": "14:08-21:08",
+        "stops": ["Cindychester"],
+        "duration": "6h 18m"
+      },
+      {
+        "origin": "Danielhaven",
+        "destination": "East Gary",
+        "date": "23:41-08:41",
+        "stops": ["Garciaberg"],
+        "duration": "6h 16m"
+      }
+    ]
+  },
+  {
+    "price": 6363,
+    "carrier": "LB",
+    "segments": [
+      {
+        "origin": "West Beckymouth",
+        "destination": "Schaeferstad",
+        "date": "19:13-00:13",
+        "stops": ["Trujilloville", "Johnborough", "Melissaview"],
+        "duration": "12h 23m"
+      },
+      {
+        "origin": "Stephenport",
+        "destination": "West Jerry",
+        "date": "23:07-06:07",
+        "stops": ["West Russell", "East Davidborough", "Wesleyton"],
+        "duration": "6h 53m"
+      }
+    ]
+  },
+  {
+    "price": 5400,
+    "carrier": "HZ",
+    "segments": [
+      {
+        "origin": "South Dianaland",
+        "destination": "East Juliaside",
+        "date": "17:09-03:09",
+        "stops": ["South Gregoryberg", "East Juliashire", "West Juanhaven"],
+        "duration": "6h 50m"
+      },
+      {
+        "origin": "Warnerville",
+        "destination": "Lindastad",
+        "date": "12:15-19:15",
+        "stops": ["Scottville", "East Audrey"],
+        "duration": "12h 37m"
+      }
+    ]
+  },
+  {
+    "price": 6159,
+    "carrier": "MI",
+    "segments": [
+      {
+        "origin": "Lake Heather",
+        "destination": "Ballardtown",
+        "date": "09:15-19:15",
+        "stops": [],
+        "duration": "1h 36m"
+      },
+      {
+        "origin": "Hillmouth",
+        "destination": "South Jessicaton",
+        "date": "01:31-10:31",
+        "stops": ["New Lindsay", "Joshuashire", "East Johntown"],
+        "duration": "12h 28m"
+      }
+    ]
+  },
+  {
+    "price": 18061,
+    "carrier": "NZ",
+    "segments": [
+      {
+        "origin": "Port Diane",
+        "destination": "New Summerfurt",
+        "date": "23:00-08:00",
+        "stops": ["Carrhaven", "East Paulmouth", "Ramirezburgh"],
+        "duration": "5h 3m"
+      },
+      {
+        "origin": "South Paulfurt",
+        "destination": "South Katherinetown",
+        "date": "04:52-14:52",
+        "stops": ["Dustinborough", "Jacksonstad", "Solisfurt"],
+        "duration": "12h 34m"
+      }
+    ]
+  },
+  {
+    "price": 11478,
+    "carrier": "VL",
+    "segments": [
+      {
+        "origin": "Dianaburgh",
+        "destination": "Shannonton",
+        "date": "05:18-11:18",
+        "stops": ["Jacobville", "New Ericberg"],
+        "duration": "6h 0m"
+      },
+      {
+        "origin": "West Troy",
+        "destination": "Deniseberg",
+        "date": "16:19-22:19",
+        "stops": ["Kathrynchester"],
+        "duration": "2h 57m"
+      }
+    ]
+  },
+  {
+    "price": 8904,
+    "carrier": "JE",
+    "segments": [
+      {
+        "origin": "West Stacy",
+        "destination": "New Audreyton",
+        "date": "17:02-04:02",
+        "stops": ["North Michael", "South Ashley", "Brianmouth"],
+        "duration": "12h 26m"
+      },
+      {
+        "origin": "New Aaron",
+        "destination": "Torresborough",
+        "date": "09:25-15:25",
+        "stops": [],
+        "duration": "3h 52m"
+      }
+    ]
+  },
+  {
+    "price": 11983,
+    "carrier": "KK",
+    "segments": [
+      {
+        "origin": "Smithton",
+        "destination": "East Marco",
+        "date": "15:00-01:00",
+        "stops": ["West Markfurt", "Amystad"],
+        "duration": "6h 27m"
+      },
+      {
+        "origin": "Johnsonport",
+        "destination": "North Christopherport",
+        "date": "10:05-18:05",
+        "stops": ["Heatherview", "North Amanda"],
+        "duration": "9h 0m"
+      }
+    ]
+  },
+  {
+    "price": 6113,
+    "carrier": "GR",
+    "segments": [
+      {
+        "origin": "Port Shawnburgh",
+        "destination": "Anthonychester",
+        "date": "11:57-22:57",
+        "stops": ["Brownview", "Lake Brianstad", "East Staceytown"],
+        "duration": "10h 48m"
+      },
+      {
+        "origin": "Lake Kathrynberg",
+        "destination": "Ashleyport",
+        "date": "02:42-08:42",
+        "stops": ["Pamelaburgh", "West Stacy", "Port Rebeccafurt"],
+        "duration": "9h 2m"
+      }
+    ]
+  },
+  {
+    "price": 8752,
+    "carrier": "XJ",
+    "segments": [
+      {
+        "origin": "Amyborough",
+        "destination": "Richardside",
+        "date": "21:44-07:44",
+        "stops": ["Port Frankmouth", "North Laurashire"],
+        "duration": "6h 21m"
+      },
+      {
+        "origin": "Montgomerystad",
+        "destination": "West Maxwellbury",
+        "date": "06:41-17:41",
+        "stops": ["North David", "Port Patricia", "Port Ronaldburgh"],
+        "duration": "11h 49m"
+      }
+    ]
+  }
+]
