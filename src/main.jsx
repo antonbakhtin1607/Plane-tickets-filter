@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router';
 
 import App from './App.jsx';
-import store from './app/store.js';
+import store from './redux/store.js';
 
 const root = document.getElementById('root');
 
