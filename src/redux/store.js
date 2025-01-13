@@ -1,10 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { all } from 'redux-saga/effects';
 import createSagaMiddleware from 'redux-saga';
 
-import ticketsReducer from './ducks/tickets';
-import { rootSaga } from './ducks';
+import ticketsReducer, { ticketsWatcherSaga } from './ducks/tickets';
 
 const sagaMiddleware = createSagaMiddleware();
+
+function* rootSaga() {
+  yield all([ticketsWatcherSaga()]);
+}
 
 const store = configureStore({
   reducer: {
