@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Pagination } from '@mui/material';
 import { useSearchParams } from 'react-router';
 
 import {
@@ -23,18 +23,27 @@ import AirCompanyLogo from '../assets/AirCompanyLogo.png';
 
 const TicketList = () => {
   const dispatch = useDispatch();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const itemsPerPage = 5;
 
+  const [page, setPage] = useState(1);
+  const [activeButton, setActiveButton] = useState(0);
   const tickets = useSelector(selectFilteredTickets);
   const { loading, error } = useSelector((state) => state.tickets);
-
-  const [activeButton, setActiveButton] = useState(0);
-
-  const [searchParams, setSearchParams] = useSearchParams();
   const sortParam = searchParams.get('sort') || 'cheapest';
+
+  const paginatedTickets = tickets.slice(
+    (page - 1) * itemsPerPage,
+    page * itemsPerPage
+  );
 
   useEffect(() => {
     dispatch(fetchTicketsRequest());
   }, [dispatch]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
 
   useEffect(() => {
     if (!loading) {
@@ -61,6 +70,10 @@ const TicketList = () => {
       ...Object.fromEntries(searchParams.entries()),
       sort: sortType,
     });
+  };
+
+  const handlePageChange = (event, value) => {
+    setPage(value);
   };
 
   if (loading) return <Typography>Loading tickets...</Typography>;
@@ -108,7 +121,7 @@ const TicketList = () => {
         </Button>
       </StyledButtonGroup>
 
-      {tickets.map((ticket, index) => (
+      {paginatedTickets.map((ticket, index) => (
         <TicketBox key={index}>
           <PriceBox>{ticket.price} ₴</PriceBox>
 
@@ -164,6 +177,19 @@ const TicketList = () => {
           ))}
         </TicketBox>
       ))}
+
+      {paginatedTickets.length === 0 && (
+        <Typography>Немає квитків, які відповідають вашому запиту</Typography>
+      )}
+
+      {paginatedTickets.length >= itemsPerPage && (
+        <Pagination
+          count={Math.ceil(tickets.length / itemsPerPage)}
+          page={page}
+          onChange={handlePageChange}
+          sx={{ marginTop: '20px', display: 'flex', justifyContent: 'center' }}
+        />
+      )}
     </>
   );
 };
