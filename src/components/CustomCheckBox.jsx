@@ -5,13 +5,14 @@ import PropTypes from 'prop-types';
 
 import { styledTheme } from '../theme';
 
-const CustomCheckbox = ({ checked, label }) => (
+const CustomCheckbox = ({ checked, label, onChange }) => (
   <FormControlLabel
     control={
       <Checkbox
-        defaultChecked={checked}
+        checked={checked}
         icon={<CheckBoxOutlineBlankOutlinedIcon />}
         checkedIcon={<CheckBoxOutlinedIcon />}
+        onChange={onChange}
         sx={{
           color: styledTheme.colors.blue,
           '&.Mui-checked': {
@@ -27,6 +28,7 @@ const CustomCheckbox = ({ checked, label }) => (
 CustomCheckbox.propTypes = {
   checked: PropTypes.bool.isRequired,
   label: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default CustomCheckbox;
