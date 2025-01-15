@@ -1,3 +1,4 @@
+import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -18,7 +19,7 @@ const App = () => (
     <StyledThemeProvider theme={styledTheme}>
       <GlobalStyle colors={styledTheme.font.primaryGrey} />
       <StyledAppContainer>
-        <StyledLogoBox component="img" src={WebsiteLogo} alt="Logo" />
+        <StyledLogoBox as="img" src={WebsiteLogo} alt="Logo" />
         <StyledGridContainer
           container
           spacing={2}

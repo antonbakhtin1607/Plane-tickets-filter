@@ -21,7 +21,12 @@ export const StyledGridContainer = styled(Grid2)`
   align-items: baseline;
 `;
 
-export const StyledGridItem = styled(Grid2)`
+type StyledGridItemProps = {
+  backgroundColor?: string;
+  xs: number | boolean;
+};
+
+export const StyledGridItem = styled(Grid2)<StyledGridItemProps>`
   max-width: 580px;
   padding: 16px;
   border-radius: 8px;

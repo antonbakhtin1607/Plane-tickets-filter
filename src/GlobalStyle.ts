@@ -1,12 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
+type GlobalStyleProps = {
+  colors: string;
+};
+
+const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
   /* CSS Reset */
   *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
   }
 
   /* Global Styles */

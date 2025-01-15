@@ -1,11 +1,21 @@
+import React from 'react';
 import { Checkbox, FormControlLabel } from '@mui/material';
 import CheckBoxOutlineBlankOutlinedIcon from '@mui/icons-material/CheckBoxOutlineBlankOutlined';
 import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
-import PropTypes from 'prop-types';
 
 import { styledTheme } from '../theme';
 
-const CustomCheckbox = ({ checked, label, onChange }) => (
+type CustomCheckboxProps = {
+  checked: boolean;
+  label: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};
+
+const CustomCheckbox: React.FC<CustomCheckboxProps> = ({
+  checked,
+  label,
+  onChange,
+}) => (
   <FormControlLabel
     control={
       <Checkbox
@@ -24,11 +34,5 @@ const CustomCheckbox = ({ checked, label, onChange }) => (
     label={label}
   />
 );
-
-CustomCheckbox.propTypes = {
-  checked: PropTypes.bool.isRequired,
-  label: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-};
 
 export default CustomCheckbox;

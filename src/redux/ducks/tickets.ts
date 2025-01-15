@@ -1,28 +1,51 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { takeLatest, call, put } from 'redux-saga/effects';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { takeLatest, call, put, Effect } from 'redux-saga/effects';
+
+export type Segment = {
+  origin: string;
+  destination: string;
+  date: string;
+  stops: string[];
+  duration: string;
+};
+
+export type Ticket = {
+  price: number;
+  carrier: string;
+  segments: Segment[];
+};
+
+type TicketsState = {
+  data: Ticket[];
+  loading: boolean;
+  error: string | null;
+  transferFilter: number[];
+};
+
+const initialState: TicketsState = {
+  data: [],
+  loading: false,
+  error: null,
+  transferFilter: [],
+};
 
 const ticketsSlice = createSlice({
   name: 'tickets',
-  initialState: {
-    data: [],
-    loading: false,
-    error: null,
-    transferFilter: [],
-  },
+  initialState,
   reducers: {
     fetchTicketsRequest: (state) => {
       state.loading = true;
       state.error = null;
     },
-    fetchTicketsSuccess: (state, action) => {
+    fetchTicketsSuccess: (state, action: PayloadAction<Ticket[]>) => {
       state.loading = false;
       state.data = action.payload;
     },
-    fetchTicketsFailure: (state, action) => {
+    fetchTicketsFailure: (state, action: PayloadAction<string>) => {
       state.loading = false;
       state.error = action.payload;
     },
-    setTransferFilter: (state, action) => {
+    setTransferFilter: (state, action: PayloadAction<number[]>) => {
       state.transferFilter = action.payload;
     },
     sortTicketsByPrice: (state) => {
@@ -44,7 +67,7 @@ const ticketsSlice = createSlice({
   },
 });
 
-const parseDuration = (duration) => {
+const parseDuration = (duration: string): number => {
   const [hours, minutes] = duration
     .split('h ')
     .map((part) => parseInt(part, 10));
@@ -71,12 +94,16 @@ function fetchTicketsFromApi() {
   });
 }
 
-function* fetchTicketsSaga() {
+function* fetchTicketsSaga(): Generator<Effect, void, Ticket[]> {
   try {
     const response = yield call(fetchTicketsFromApi);
     yield put(fetchTicketsSuccess(response));
   } catch (error) {
-    yield put(fetchTicketsFailure(error.message));
+    if (error instanceof Error) {
+      yield put(fetchTicketsFailure(error.message));
+    } else {
+      yield put(fetchTicketsFailure('An unknown error occurred'));
+    }
   }
 }
 
@@ -84,7 +111,7 @@ export function* ticketsWatcherSaga() {
   yield takeLatest(fetchTicketsRequest.type, fetchTicketsSaga);
 }
 
-export const selectFilteredTickets = (state) => {
+export const selectFilteredTickets = (state: { tickets: TicketsState }) => {
   const { data, transferFilter } = state.tickets;
   if (transferFilter.length === 0) {
     return data;
