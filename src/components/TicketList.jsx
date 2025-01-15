@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Pagination } from '@mui/material';
+import { useSearchParams } from 'react-router';
 
 import {
   StyledButtonGroup,
@@ -10,19 +11,70 @@ import {
   SegmentBox,
 } from '../styled/StyledTicketList';
 
-import { fetchTicketsRequest } from '../redux/ducks/tickets';
+import {
+  fetchTicketsRequest,
+  sortTicketsByPrice,
+  sortTicketsByFastest,
+  selectFilteredTickets,
+  setTransferFilter,
+} from '../redux/ducks/tickets';
 import { styledTheme } from '../theme';
 import AirCompanyLogo from '../assets/AirCompanyLogo.png';
 
 const TicketList = () => {
   const dispatch = useDispatch();
-  const [activeButton, setActiveButton] = useState(0);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const itemsPerPage = 5;
 
-  const { data, loading, error } = useSelector((state) => state.tickets);
+  const [page, setPage] = useState(1);
+  const [activeButton, setActiveButton] = useState(0);
+  const tickets = useSelector(selectFilteredTickets);
+  const { loading, error } = useSelector((state) => state.tickets);
+  const sortParam = searchParams.get('sort') || 'cheapest';
+
+  const paginatedTickets = tickets.slice(
+    (page - 1) * itemsPerPage,
+    page * itemsPerPage
+  );
 
   useEffect(() => {
     dispatch(fetchTicketsRequest());
   }, [dispatch]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [page]);
+
+  useEffect(() => {
+    if (!loading) {
+      if (sortParam === 'cheapest') {
+        dispatch(sortTicketsByPrice());
+        setActiveButton(0);
+      } else if (sortParam === 'fastest') {
+        dispatch(sortTicketsByFastest());
+        setActiveButton(1);
+      }
+    }
+  }, [sortParam, loading, dispatch]);
+
+  useEffect(() => {
+    const filters = searchParams.get('transfers');
+    if (filters) {
+      const filterArray = filters.split(',').map(Number);
+      dispatch(setTransferFilter(filterArray));
+    }
+  }, [dispatch, searchParams]);
+
+  const handleSortChange = (sortType) => {
+    setSearchParams({
+      ...Object.fromEntries(searchParams.entries()),
+      sort: sortType,
+    });
+  };
+
+  const handlePageChange = (event, value) => {
+    setPage(value);
+  };
 
   if (loading) return <Typography>Loading tickets...</Typography>;
   if (error) return <Typography>Error loading tickets: {error}</Typography>;
@@ -31,7 +83,7 @@ const TicketList = () => {
     <>
       <StyledButtonGroup variant="contained" aria-label="Basic button group">
         <Button
-          onClick={() => setActiveButton(0)}
+          onClick={() => handleSortChange('cheapest')}
           fullWidth
           sx={{
             color:
@@ -50,7 +102,7 @@ const TicketList = () => {
         </Button>
 
         <Button
-          onClick={() => setActiveButton(1)}
+          onClick={() => handleSortChange('fastest')}
           fullWidth
           sx={{
             color:
@@ -69,7 +121,7 @@ const TicketList = () => {
         </Button>
       </StyledButtonGroup>
 
-      {data.map((ticket, index) => (
+      {paginatedTickets.map((ticket, index) => (
         <TicketBox key={index}>
           <PriceBox>{ticket.price} ₴</PriceBox>
 
@@ -125,6 +177,19 @@ const TicketList = () => {
           ))}
         </TicketBox>
       ))}
+
+      {paginatedTickets.length === 0 && (
+        <Typography>Немає квитків, які відповідають вашому запиту</Typography>
+      )}
+
+      {paginatedTickets.length >= itemsPerPage && (
+        <Pagination
+          count={Math.ceil(tickets.length / itemsPerPage)}
+          page={page}
+          onChange={handlePageChange}
+          sx={{ marginTop: '20px', display: 'flex', justifyContent: 'center' }}
+        />
+      )}
     </>
   );
 };
