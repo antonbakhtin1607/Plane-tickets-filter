@@ -3,16 +3,18 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FormGroup } from '@mui/material';
 import { useSearchParams } from 'react-router';
 
-import CustomCheckbox from './CustomCheckbox';
-import { StyledFormControlLabel } from '../styled/StyledCheckBox';
+import CustomCheckbox from '../CustomCheckBox/CustomCheckbox';
+import { StyledFormControlLabel } from '../../styled/StyledCheckBox';
 
-import { setTransferFilter } from '../redux/ducks/tickets';
-import { RootState } from '../redux/store';
+import { setTransferFilter } from '../../redux/ducks/tickets';
+import { RootState } from '../../redux/store';
 
 const CheckBox = () => {
   const dispatch = useDispatch();
   const [searchParams, setSearchParams] = useSearchParams();
-  const transferFilter = useSelector((state: RootState) => state.tickets.transferFilter);
+  const transferFilter = useSelector(
+    (state: RootState) => state.tickets.transferFilter
+  );
 
   useEffect(() => {
     const filters = searchParams.get('transfers');
