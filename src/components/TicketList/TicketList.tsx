@@ -9,7 +9,7 @@ import {
   PriceBox,
   LogoBox,
   SegmentBox,
-} from '../styled/StyledTicketList';
+} from '../../styled/StyledTicketList';
 
 import {
   fetchTicketsRequest,
@@ -17,11 +17,11 @@ import {
   sortTicketsByFastest,
   selectFilteredTickets,
   setTransferFilter,
-} from '../redux/ducks/tickets';
-import { styledTheme } from '../theme';
-import AirCompanyLogo from '../assets/AirCompanyLogo.png';
-import { Ticket, Segment } from '../redux/ducks/tickets';
-import { RootState } from '../redux/store';
+} from '../../redux/ducks/tickets';
+import { styledTheme } from '../../theme';
+import AirCompanyLogo from '../../assets/AirCompanyLogo.png';
+import { Ticket, Segment } from '../../redux/ducks/tickets';
+import { RootState } from '../../redux/store';
 
 const TicketList: React.FC = () => {
   const dispatch = useDispatch();
@@ -125,7 +125,7 @@ const TicketList: React.FC = () => {
 
       {paginatedTickets.map((ticket: Ticket, index: number) => (
         <TicketBox key={index}>
-          <PriceBox>{ticket.price} ₴</PriceBox>
+          <PriceBox>{`${ticket.price} ₴`}</PriceBox>
 
           <LogoBox>
             <img src={AirCompanyLogo} alt="Air Company Logo" />
@@ -187,6 +187,7 @@ const TicketList: React.FC = () => {
       {paginatedTickets.length >= itemsPerPage && (
         <Pagination
           count={Math.ceil(tickets.length / itemsPerPage)}
+          role='navigation'
           page={page}
           onChange={(_, value) => handlePageChange(value)}
           sx={{ marginTop: '20px', display: 'flex', justifyContent: 'center' }}

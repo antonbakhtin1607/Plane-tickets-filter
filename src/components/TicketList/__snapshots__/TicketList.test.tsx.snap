@@ -1,0 +1,704 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TicketList Component does not render pagination when there are fewer than 5 tickets 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Basic button group"
+    class="MuiButtonGroup-root MuiButtonGroup-contained MuiButtonGroup-horizontal MuiButtonGroup-colorPrimary sc-dDvxFM fyNbHT css-75uvui-MuiButtonGroup-root"
+    role="group"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-firstButton css-x5z5an-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий дешевий
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-lastButton css-13m7yu1-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий швидкий
+    </button>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      18889 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      6633 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TicketList Component handles pagination correctly when there are enough tickets 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Basic button group"
+    class="MuiButtonGroup-root MuiButtonGroup-contained MuiButtonGroup-horizontal MuiButtonGroup-colorPrimary sc-dDvxFM fyNbHT css-75uvui-MuiButtonGroup-root"
+    role="group"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-firstButton css-x5z5an-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий дешевий
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-lastButton css-13m7yu1-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий швидкий
+    </button>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      18889 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      6633 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      5000 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      4000 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      3000 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+  </div>
+  <nav
+    aria-label="pagination navigation"
+    class="MuiPagination-root MuiPagination-text css-1f2nznp-MuiPagination-root"
+    role="navigation"
+  >
+    <ul
+      class="MuiPagination-ul css-1c5o7vy-MuiPagination-ul"
+    >
+      <li>
+        <button
+          aria-label="Go to previous page"
+          class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-previousNext css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
+          disabled=""
+          tabindex="-1"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
+            data-testid="NavigateBeforeIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button
+          aria-current="page"
+          aria-label="page 1"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
+          tabindex="0"
+          type="button"
+        >
+          1
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to page 2"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
+          tabindex="0"
+          type="button"
+        >
+          2
+        </button>
+      </li>
+      <li>
+        <button
+          aria-label="Go to next page"
+          class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
+            data-testid="NavigateNextIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`TicketList Component handles sort button clicks correctly 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Basic button group"
+    class="MuiButtonGroup-root MuiButtonGroup-contained MuiButtonGroup-horizontal MuiButtonGroup-colorPrimary sc-dDvxFM fyNbHT css-75uvui-MuiButtonGroup-root"
+    role="group"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-firstButton css-x5z5an-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий дешевий
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-lastButton css-13m7yu1-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий швидкий
+    </button>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      18889 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-1hvgoy7"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        Devonville - East Monicashire
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        14:54-20:54
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-rshsem"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        В ДОРОЗІ:
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        5h 59m
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-pu95kg"
+    >
+      БЕЗ ПЕРЕСАДОК
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-1hvgoy7"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        Shannonview - Lake Jennifer
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        21:40-02:40
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-rshsem"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        В ДОРОЗІ:
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        12h 2m
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-pu95kg"
+    >
+      3 ПЕРЕСАДКИ:
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        Johnsonport, Port Albert, North Jacksonstad
+      </p>
+    </div>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      6633 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-1hvgoy7"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        North George - Juliahaven
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        17:46-04:46
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-rshsem"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        В ДОРОЗІ:
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        8h 22m
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-pu95kg"
+    >
+      1 ПЕРЕСАДКА:
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        Lisafort
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-1hvgoy7"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        Lake William - Daltonport
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        20:25-01:25
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-rshsem"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        В ДОРОЗІ:
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        8h 5m
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-pu95kg"
+    >
+      2 ПЕРЕСАДКИ:
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        Harringtonbury, Nguyenfort
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TicketList Component renders error state 1`] = `
+<DocumentFragment>
+  <p
+    class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+  >
+    Error loading tickets: Something went wrong
+  </p>
+</DocumentFragment>
+`;
+
+exports[`TicketList Component renders loading state 1`] = `
+<DocumentFragment>
+  <p
+    class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+  >
+    Loading tickets...
+  </p>
+</DocumentFragment>
+`;
+
+exports[`TicketList Component renders tickets correctly 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Basic button group"
+    class="MuiButtonGroup-root MuiButtonGroup-contained MuiButtonGroup-horizontal MuiButtonGroup-colorPrimary sc-dDvxFM fyNbHT css-75uvui-MuiButtonGroup-root"
+    role="group"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-firstButton css-x5z5an-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий дешевий
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-lastButton css-13m7yu1-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий швидкий
+    </button>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      18889 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-1hvgoy7"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        Devonville - East Monicashire
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        14:54-20:54
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-rshsem"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        В ДОРОЗІ:
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        5h 59m
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-pu95kg"
+    >
+      БЕЗ ПЕРЕСАДОК
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-1hvgoy7"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        Shannonview - Lake Jennifer
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        21:40-02:40
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-rshsem"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        В ДОРОЗІ:
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        12h 2m
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-pu95kg"
+    >
+      3 ПЕРЕСАДКИ:
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        Johnsonport, Port Albert, North Jacksonstad
+      </p>
+    </div>
+  </div>
+  <div
+    class="sc-KXCwU hLRrNV MuiBox-root css-0"
+  >
+    <div
+      class="sc-gyycJP eOvulp MuiBox-root css-0"
+    >
+      6633 ₴
+    </div>
+    <div
+      class="sc-eaUbBy gOWznt MuiBox-root css-0"
+    >
+      <img
+        alt="Air Company Logo"
+        src="test-file-stub"
+      />
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-1hvgoy7"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        North George - Juliahaven
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        17:46-04:46
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-rshsem"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        В ДОРОЗІ:
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        8h 22m
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-pu95kg"
+    >
+      1 ПЕРЕСАДКА:
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        Lisafort
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-1hvgoy7"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        Lake William - Daltonport
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        20:25-01:25
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-rshsem"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+      >
+        В ДОРОЗІ:
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        8h 5m
+      </p>
+    </div>
+    <div
+      class="sc-gaZyOd hwyqZQ MuiBox-root css-pu95kg"
+    >
+      2 ПЕРЕСАДКИ:
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-vydm96-MuiTypography-root"
+      >
+        Harringtonbury, Nguyenfort
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`TicketList Component shows no tickets message when filteredTickets is empty 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Basic button group"
+    class="MuiButtonGroup-root MuiButtonGroup-contained MuiButtonGroup-horizontal MuiButtonGroup-colorPrimary sc-dDvxFM fyNbHT css-75uvui-MuiButtonGroup-root"
+    role="group"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-firstButton css-x5z5an-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий дешевий
+    </button>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContainedPrimary MuiButtonGroup-lastButton css-13m7yu1-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Самий швидкий
+    </button>
+  </div>
+  <p
+    class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+  >
+    Немає квитків, які відповідають вашому запиту
+  </p>
+</DocumentFragment>
+`;
