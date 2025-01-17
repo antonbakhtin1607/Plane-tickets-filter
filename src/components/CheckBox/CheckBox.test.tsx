@@ -26,7 +26,10 @@ describe('CheckBox Component', () => {
       },
     });
     store.dispatch = dispatchMock;
-    (useSearchParams as jest.Mock).mockReturnValue([new URLSearchParams(), jest.fn()]);
+    (useSearchParams as jest.Mock).mockReturnValue([
+      new URLSearchParams(),
+      jest.fn(),
+    ]);
   });
 
   test('renders checkboxes with correct initial state', () => {
@@ -61,7 +64,10 @@ describe('CheckBox Component', () => {
 
   test('updates URL search params when checkbox is clicked', () => {
     const setSearchParamsMock = jest.fn();
-    (useSearchParams as jest.Mock).mockReturnValue([new URLSearchParams(), setSearchParamsMock]);
+    (useSearchParams as jest.Mock).mockReturnValue([
+      new URLSearchParams(),
+      setSearchParamsMock,
+    ]);
 
     const { asFragment } = render(
       <Provider store={store}>
@@ -80,7 +86,10 @@ describe('CheckBox Component', () => {
   });
 
   test('dispatches setTransferFilter based on URL params', () => {
-    (useSearchParams as jest.Mock).mockReturnValue([new URLSearchParams('transfers=1,2'), jest.fn()]);
+    (useSearchParams as jest.Mock).mockReturnValue([
+      new URLSearchParams('transfers=1,2'),
+      jest.fn(),
+    ]);
 
     const { asFragment } = render(
       <Provider store={store}>

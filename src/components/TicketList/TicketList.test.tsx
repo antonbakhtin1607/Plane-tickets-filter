@@ -126,7 +126,9 @@ describe('TicketList Component', () => {
     expect(asFragment()).toMatchSnapshot();
 
     expect(screen.getByText('18889 ₴')).toBeInTheDocument();
-    expect(screen.getByText('Devonville - East Monicashire')).toBeInTheDocument();
+    expect(
+      screen.getByText('Devonville - East Monicashire')
+    ).toBeInTheDocument();
     expect(screen.getByText('14:54-20:54')).toBeInTheDocument();
     expect(screen.getByText('5h 59m')).toBeInTheDocument();
     expect(screen.getByText('БЕЗ ПЕРЕСАДОК')).toBeInTheDocument();

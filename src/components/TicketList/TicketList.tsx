@@ -187,7 +187,7 @@ const TicketList: React.FC = () => {
       {paginatedTickets.length >= itemsPerPage && (
         <Pagination
           count={Math.ceil(tickets.length / itemsPerPage)}
-          role='navigation'
+          role="navigation"
           page={page}
           onChange={(_, value) => handlePageChange(value)}
           sx={{ marginTop: '20px', display: 'flex', justifyContent: 'center' }}
