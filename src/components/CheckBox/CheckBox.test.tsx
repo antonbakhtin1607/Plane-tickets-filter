@@ -19,7 +19,7 @@ describe('CheckBox Component', () => {
     dispatchMock = jest.fn();
     store = createMockStore({
       tickets: {
-        transferFilter: [1,2],
+        transferFilter: [1, 2],
         data: [],
         loading: false,
         error: null,
@@ -30,12 +30,14 @@ describe('CheckBox Component', () => {
   });
 
   test('renders checkboxes with correct initial state', () => {
-    render(
+    const { asFragment } = render(
       <Provider store={store}>
         <CheckBox />
       </Provider>
     );
-  
+
+    expect(asFragment()).toMatchSnapshot();
+
     expect(screen.getByText('Кількість пересадок')).toBeInTheDocument();
     expect(screen.getByLabelText('Все')).toBeInTheDocument();
     expect(screen.getByLabelText('Без пересадок')).toBeInTheDocument();
@@ -45,11 +47,13 @@ describe('CheckBox Component', () => {
   });
 
   test('dispatches setTransferFilter when a checkbox is clicked', () => {
-    render(
+    const { asFragment } = render(
       <Provider store={store}>
         <CheckBox />
       </Provider>
     );
+
+    expect(asFragment()).toMatchSnapshot();
 
     fireEvent.click(screen.getByLabelText(/2 пересадки/i));
     expect(dispatchMock).toHaveBeenCalledWith(setTransferFilter([1, 2]));
@@ -59,11 +63,13 @@ describe('CheckBox Component', () => {
     const setSearchParamsMock = jest.fn();
     (useSearchParams as jest.Mock).mockReturnValue([new URLSearchParams(), setSearchParamsMock]);
 
-    render(
+    const { asFragment } = render(
       <Provider store={store}>
         <CheckBox />
       </Provider>
     );
+
+    expect(asFragment()).toMatchSnapshot();
 
     fireEvent.click(screen.getByLabelText(/3 пересадки/i));
     expect(setSearchParamsMock).toHaveBeenCalledWith(
@@ -76,11 +82,13 @@ describe('CheckBox Component', () => {
   test('dispatches setTransferFilter based on URL params', () => {
     (useSearchParams as jest.Mock).mockReturnValue([new URLSearchParams('transfers=1,2'), jest.fn()]);
 
-    render(
+    const { asFragment } = render(
       <Provider store={store}>
         <CheckBox />
       </Provider>
     );
+
+    expect(asFragment()).toMatchSnapshot();
 
     expect(dispatchMock).toHaveBeenCalledWith(setTransferFilter([1, 2]));
   });
