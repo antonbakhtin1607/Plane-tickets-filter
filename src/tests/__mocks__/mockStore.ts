@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import ticketsReducer from '../redux/ducks/tickets';
+
+import ticketsReducer from '../../redux/ducks/tickets';
 
 const defaultTicketsState = {
   data: [

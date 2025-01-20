@@ -7,7 +7,7 @@ import ticketsReducer, {
   sortTicketsByFastest,
   selectFilteredTickets,
   Ticket,
-} from './tickets';
+} from '../../../redux/ducks/tickets';
 
 describe('ticketsSlice', () => {
   const initialState = {

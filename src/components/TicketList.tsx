@@ -9,7 +9,7 @@ import {
   PriceBox,
   LogoBox,
   SegmentBox,
-} from '../../styled/StyledTicketList';
+} from '../styled/StyledTicketList';
 
 import {
   fetchTicketsRequest,
@@ -17,11 +17,11 @@ import {
   sortTicketsByFastest,
   selectFilteredTickets,
   setTransferFilter,
-} from '../../redux/ducks/tickets';
-import { styledTheme } from '../../theme';
-import AirCompanyLogo from '../../assets/AirCompanyLogo.png';
-import { Ticket, Segment } from '../../redux/ducks/tickets';
-import { RootState } from '../../redux/store';
+} from '../redux/ducks/tickets';
+import AirCompanyLogo from '../assets/AirCompanyLogo.png'
+import { styledTheme } from '../theme';
+import { Ticket, Segment } from '../redux/ducks/tickets';
+import { RootState } from '../redux/store';
 
 const TicketList: React.FC = () => {
   const dispatch = useDispatch();

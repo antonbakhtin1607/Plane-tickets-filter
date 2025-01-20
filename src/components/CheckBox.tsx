@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FormGroup } from '@mui/material';
 import { useSearchParams } from 'react-router';
 
-import CustomCheckbox from '../CustomCheckBox/CustomCheckbox';
-import { StyledFormControlLabel } from '../../styled/StyledCheckBox';
+import CustomCheckbox from './CustomCheckbox';
+import { StyledFormControlLabel } from '../styled/StyledCheckBox';
 
-import { setTransferFilter } from '../../redux/ducks/tickets';
-import { RootState } from '../../redux/store';
+import { setTransferFilter } from '../redux/ducks/tickets';
+import { RootState } from '../redux/store';
 
 const CheckBox = () => {
   const dispatch = useDispatch();

@@ -3,7 +3,7 @@ import { Checkbox, FormControlLabel } from '@mui/material';
 import CheckBoxOutlineBlankOutlinedIcon from '@mui/icons-material/CheckBoxOutlineBlankOutlined';
 import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
 
-import { styledTheme } from '../../theme';
+import { styledTheme } from '../theme';
 
 type CustomCheckboxProps = {
   checked: boolean;

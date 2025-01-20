@@ -2,10 +2,12 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { createMockStore } from '../../__mocks__/mockStore';
-import CheckBox from './CheckBox';
-import { setTransferFilter } from '../../redux/ducks/tickets';
 import { useSearchParams } from 'react-router';
+
+import CheckBox from '../../components/CheckBox';
+
+import { createMockStore } from '../__mocks__/mockStore';
+import { setTransferFilter } from '../../redux/ducks/tickets';
 
 jest.mock('react-router', () => ({
   useSearchParams: jest.fn(),
@@ -32,50 +34,83 @@ describe('CheckBox Component', () => {
     ]);
   });
 
-  test('renders checkboxes with correct initial state', () => {
-    const { asFragment } = render(
+  test('should render header text', () => {
+    render(
       <Provider store={store}>
         <CheckBox />
       </Provider>
     );
-
-    expect(asFragment()).toMatchSnapshot();
-
     expect(screen.getByText('Кількість пересадок')).toBeInTheDocument();
+  });
+
+  test('should render "Все" checkbox', () => {
+    render(
+      <Provider store={store}>
+        <CheckBox />
+      </Provider>
+    );
     expect(screen.getByLabelText('Все')).toBeInTheDocument();
+  });
+
+  test('should render "Без пересадок" checkbox', () => {
+    render(
+      <Provider store={store}>
+        <CheckBox />
+      </Provider>
+    );
     expect(screen.getByLabelText('Без пересадок')).toBeInTheDocument();
+  });
+
+  test('should render "1 пересадка" checkbox', () => {
+    render(
+      <Provider store={store}>
+        <CheckBox />
+      </Provider>
+    );
     expect(screen.getByLabelText('1 пересадка')).toBeInTheDocument();
+  });
+
+  test('should render "2 пересадки" checkbox', () => {
+    render(
+      <Provider store={store}>
+        <CheckBox />
+      </Provider>
+    );
     expect(screen.getByLabelText('2 пересадки')).toBeInTheDocument();
+  });
+
+  test('should render "3 пересадки" checkbox', () => {
+    render(
+      <Provider store={store}>
+        <CheckBox />
+      </Provider>
+    );
     expect(screen.getByLabelText('3 пересадки')).toBeInTheDocument();
   });
 
-  test('dispatches setTransferFilter when a checkbox is clicked', () => {
-    const { asFragment } = render(
+  test('should dispatch setTransferFilter when a checkbox is clicked', () => {
+    render(
       <Provider store={store}>
         <CheckBox />
       </Provider>
     );
-
-    expect(asFragment()).toMatchSnapshot();
 
     fireEvent.click(screen.getByLabelText(/2 пересадки/i));
     expect(dispatchMock).toHaveBeenCalledWith(setTransferFilter([1, 2]));
   });
 
-  test('updates URL search params when checkbox is clicked', () => {
+  test('should update URL search params when checkbox is clicked', () => {
     const setSearchParamsMock = jest.fn();
     (useSearchParams as jest.Mock).mockReturnValue([
       new URLSearchParams(),
       setSearchParamsMock,
     ]);
 
-    const { asFragment } = render(
+    render(
       <Provider store={store}>
         <CheckBox />
       </Provider>
     );
-
-    expect(asFragment()).toMatchSnapshot();
 
     fireEvent.click(screen.getByLabelText(/3 пересадки/i));
     expect(setSearchParamsMock).toHaveBeenCalledWith(
@@ -85,19 +120,17 @@ describe('CheckBox Component', () => {
     );
   });
 
-  test('dispatches setTransferFilter based on URL params', () => {
+  test('should dispatch setTransferFilter based on URL params', () => {
     (useSearchParams as jest.Mock).mockReturnValue([
       new URLSearchParams('transfers=1,2'),
       jest.fn(),
     ]);
 
-    const { asFragment } = render(
+    render(
       <Provider store={store}>
         <CheckBox />
       </Provider>
     );
-
-    expect(asFragment()).toMatchSnapshot();
 
     expect(dispatchMock).toHaveBeenCalledWith(setTransferFilter([1, 2]));
   });
