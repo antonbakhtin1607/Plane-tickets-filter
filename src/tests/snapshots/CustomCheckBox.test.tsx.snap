@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomCheckbox Component applies the checked state correctly 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        checked=""
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H5V5h14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Checked
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component calls the onChange handler when clicked 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlineBlankOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Click Test
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component calls the onChange handler when clicked 2`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlineBlankOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Click Test
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component renders the checkbox with the correct label 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlineBlankOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Test Label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component should apply the checked state correctly 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        checked=""
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H5V5h14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Checked
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component should call the onChange handler when clicked 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlineBlankOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Click Test
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component should call the onChange handler when clicked 2`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlineBlankOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Click Test
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component should match the snapshot after clicking 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlineBlankOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Click Test
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component should match the snapshot when checked 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        checked=""
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 16H5V5h14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Checked
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component should match the snapshot when unchecked 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlineBlankOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Test Label
+    </span>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`CustomCheckbox Component should render the checkbox with the correct label 1`] = `
+<DocumentFragment>
+  <label
+    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+  >
+    <span
+      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1frrnlk-MuiButtonBase-root-MuiCheckbox-root"
+    >
+      <input
+        class="PrivateSwitchBase-input css-j8yymo"
+        data-indeterminate="false"
+        type="checkbox"
+      />
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+        data-testid="CheckBoxOutlineBlankOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5zm0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2"
+        />
+      </svg>
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+    >
+      Test Label
+    </span>
+  </label>
+</DocumentFragment>
+`;

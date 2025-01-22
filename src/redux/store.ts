@@ -10,7 +10,7 @@ function* rootSaga() {
   yield all([ticketsWatcherSaga()]);
 }
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
     tickets: ticketsReducer,
   },
@@ -20,4 +20,4 @@ const store = configureStore({
 
 sagaMiddleware.run(rootSaga);
 
-export default store;
+export type RootState = ReturnType<typeof store.getState>;

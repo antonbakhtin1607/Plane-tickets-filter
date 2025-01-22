@@ -19,14 +19,9 @@ export const muiTheme = createTheme({
   palette: {
     primary: {
       main: baseTheme.colors.primary,
-      white: baseTheme.colors.white,
-      background: baseTheme.colors.background,
-      blue: baseTheme.colors.blue,
-    },
-    font: {
-      primaryGrey: baseTheme.font.primaryGrey,
-      lightGrey: baseTheme.font.lightGrey,
-      boldGrey: baseTheme.font.boldGrey,
+      light: baseTheme.colors.white,
+      dark: baseTheme.colors.background,
+      contrastText: baseTheme.colors.blue,
     },
   },
 });

@@ -29,7 +29,11 @@ export const LogoBox = styled(Box)`
   justify-content: flex-start;
 `;
 
-export const SegmentBox = styled(Box)`
+type SegmentBoxProps = {
+  area?: string;
+};
+
+export const SegmentBox = styled(Box)<SegmentBoxProps>`
   grid-area: ${({ area }) => area};
 `;
 
